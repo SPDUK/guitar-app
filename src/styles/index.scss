@@ -1,10 +1,12 @@
 /* stylelint-disable */
 
-@import '~antd/dist/antd.css';
-$rhap_theme-color: #fafafa !default; // Color of all buttons and volume/progress indicators
-$rhap_background-color: #001529 !default; // Color of the player background
+@import '~antd/dist/antd.dark.css';
+@import "./variables.scss";
+
+$rhap_theme-color: $white !default; // Color of all buttons and volume/progress indicators
+$rhap_background-color: $primary-dark !default; // Color of the player background
 $rhap_bar-color: rgb(52, 51, 56) !default; // Color of volume and progress bar
-$rhap_time-color: rgb(179, 179, 179) !default; // Font color of current time and duration
+$rhap_time-color: $white !default; // Font color of current time and duration
 $rhap_font-family: inherit !default;
 
 @import 'react-h5-audio-player/src/styles.scss';
@@ -13,15 +15,16 @@ $rhap_font-family: inherit !default;
 // styles for current playing song override
 
 .audio-player-header {
-  color: #fafafa;
+  color: $white;
   font-size: 15px;
+  font-weight: 600;
   height: 24px;
   padding: 8px 0;
 }
 
 .rhap_progress-section:hover {
   .rhap_progress-filled {
-    background-color: #002140
+    background-color: $primary;
   }
 }
 

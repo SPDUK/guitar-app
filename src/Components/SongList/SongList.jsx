@@ -6,7 +6,9 @@ import { PlayCircleOutlined, SoundOutlined } from '@ant-design/icons';
 import TimeAgo from 'javascript-time-ago';
 import en from 'javascript-time-ago/locale/en';
 import { useGuitarContext } from '../../contexts/GuitarContext';
-import { listItem, nowPlaying } from './song-list.module.scss';
+import {
+  listItem, nowPlaying, titleContainer, date,
+} from './song-list.module.scss';
 
 TimeAgo.addDefaultLocale(en);
 const timeAgo = new TimeAgo('en-US');
@@ -30,10 +32,11 @@ export default function SongList({ list }) {
             role="menuitem"
             tabIndex="0"
           >
-            <Button tabIndex="-1" icon={isCurrentSong ? <SoundOutlined /> : <PlayCircleOutlined />} type="link">
+            <Button tabIndex="-1" icon={isCurrentSong ? <SoundOutlined /> : <PlayCircleOutlined />} type="link" />
+            <span className={titleContainer}>
               {title}
-            </Button>
-            <div>
+            </span>
+            <div className={date}>
               {timeAgo.format(new Date(lastModified), 'round')}
             </div>
           </div>

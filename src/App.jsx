@@ -40,7 +40,7 @@ function App() {
           </Menu>
         </Sider>
         <Layout className="site-layout" theme="dark">
-          <Content>
+          <Content style={{ padding: 20, background: '#181818' }}>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/songs" component={Songs} />
