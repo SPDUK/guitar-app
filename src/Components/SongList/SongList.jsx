@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Button } from 'antd';
 import { PlayCircleOutlined, SoundOutlined } from '@ant-design/icons';
 import TimeAgo from 'javascript-time-ago';
 import en from 'javascript-time-ago/locale/en';
 import { useGuitarContext } from '../../contexts/GuitarContext';
 import {
-  listItem, nowPlaying, titleContainer, date,
+  listItem, nowPlaying, titleContainer, date, icon,
 } from './song-list.module.scss';
 
 TimeAgo.addDefaultLocale(en);
@@ -32,7 +31,7 @@ export default function SongList({ list }) {
             role="menuitem"
             tabIndex="0"
           >
-            <Button tabIndex="-1" icon={isCurrentSong ? <SoundOutlined /> : <PlayCircleOutlined />} type="link" />
+            {isCurrentSong ? <SoundOutlined className={icon} /> : <PlayCircleOutlined className={icon} />}
             <span className={titleContainer}>
               {title}
             </span>
