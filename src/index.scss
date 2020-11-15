@@ -1,0 +1,33 @@
+/* stylelint-disable */
+
+@import '~antd/dist/antd.css';
+$rhap_theme-color: #fafafa !default; // Color of all buttons and volume/progress indicators
+$rhap_background-color: #001529 !default; // Color of the player background
+$rhap_bar-color: rgb(52, 51, 56) !default; // Color of volume and progress bar
+$rhap_time-color: rgb(179, 179, 179) !default; // Font color of current time and duration
+$rhap_font-family: inherit !default;
+
+@import 'react-h5-audio-player/src/styles.scss';
+
+
+// styles for current playing song override
+
+.audio-player-header {
+  color: #fafafa;
+  font-size: 15px;
+  height: 24px;
+  padding: 8px 0;
+}
+
+.rhap_progress-section:hover {
+  .rhap_progress-filled {
+    background-color: #002140
+  }
+}
+
+/* Remove outline for non-keyboard :focus */
+*:focus:not(.focus-visible) {
+  outline: none;
+}
+
+/* stylelint-enable */

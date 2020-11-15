@@ -1,0 +1,17 @@
+button {
+  background-color: #fff;
+  height: 50px;
+  width: 160px;
+
+  &.default {
+    background-color: #b4d455;
+  }
+
+  &.primary {
+    background-color: #00f;
+  }
+
+  &.danger {
+    background-color: #f00;
+  }
+}
