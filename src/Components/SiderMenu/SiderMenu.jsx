@@ -4,7 +4,7 @@ import {
   Link,
   useLocation,
 } from 'react-router-dom';
-import { ThunderboltTwoTone, HeartTwoTone, CheckCircleTwoTone } from '@ant-design/icons';
+import { HomeOutlined, HeartTwoTone, CheckCircleTwoTone } from '@ant-design/icons';
 
 const { Sider } = Layout;
 
@@ -22,7 +22,7 @@ export default function SiderMenu() {
   return (
     <Sider collapsible collapsed={collapsed} onCollapse={setCollapsed}>
       <Menu theme="dark" defaultSelectedKeys={getDefaultKey()} mode="inline">
-        <Menu.Item key="1" icon={<ThunderboltTwoTone twoToneColor="#A9A9A9" />}>
+        <Menu.Item key="1" icon={<HomeOutlined twoToneColor="#A9A9A9" />}>
           <Link to="/">Home</Link>
         </Menu.Item>
         <Menu.Item key="2" icon={<HeartTwoTone twoToneColor="#A9A9A9" />}>
