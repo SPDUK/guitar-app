@@ -25,7 +25,10 @@ function App() {
       <Layout style={{ minHeight: '100vh' }}>
         <SiderMenu />
         <Layout className="site-layout" theme="dark">
-          <Content style={{ padding: 20, background: '#181818' }}>
+          <Content style={{
+            padding: 20, background: '#181818', height: 'calc(100vh - 162px)', overflowY: 'auto',
+          }}
+          >
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/songs" component={Songs} />
