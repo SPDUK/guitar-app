@@ -9,7 +9,7 @@ import { ThunderboltTwoTone, HeartTwoTone, CheckCircleTwoTone } from '@ant-desig
 const { Sider } = Layout;
 
 export default function SiderMenu() {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(window.innerWidth < 768);
   const { pathname } = useLocation();
 
   // this should probably be part of a routing config somehwere, but since there's very few pages it's fine for laziness purposes
