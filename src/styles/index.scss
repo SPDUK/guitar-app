@@ -29,8 +29,10 @@ $rhap_font-family: inherit !default;
 }
 
 
-.ant-menu-inline .ant-menu-item {
-margin-top: 0
+.ant-menu-inline, .ant-menu-inline-collapsed {
+  .ant-menu-item {
+    margin-top: 0
+  }
 }
 
 
