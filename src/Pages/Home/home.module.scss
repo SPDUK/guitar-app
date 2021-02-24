@@ -1,5 +1,58 @@
 .home {
+  z-index: 100;
+  padding: 20% 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+.bgHeader,
+.bgHeaderTwo,
+.bgHeaderThree {
+  pointer-events: none;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bgHeader {
+  opacity: 0.35;
+  animation: animateWave 18000ms ease-out infinite alternate;
+}
+
+.bgHeaderTwo {
+  opacity: 0.5;
+  animation: animateWave 15000ms ease-in infinite alternate-reverse;
+}
+
+.bgHeaderThree {
+  opacity: 0.7;
+  animation: animateWave 12000ms ease-in-out infinite alternate-reverse;
+}
+
+@keyframes animateWave {
+  0% {
+    opacity: 0.7;
+    transform: scale(-1, -1) translateX(0);
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: scale(-1, -1) translateX(-140px);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(-1, -1) translateX(0);
+  }
 }

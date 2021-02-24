@@ -20,7 +20,7 @@ export default function SiderMenu() {
   }
 
   return (
-    <Sider collapsible collapsed={collapsed} onCollapse={setCollapsed}>
+    <Sider style={{ zIndex: 1000 }} collapsible collapsed={collapsed} onCollapse={setCollapsed}>
       <Menu theme="dark" defaultSelectedKeys={getDefaultKey()} mode="inline">
         <Menu.Item key="1" icon={<HomeOutlined twoToneColor="#A9A9A9" />}>
           <Link to="/">Home</Link>

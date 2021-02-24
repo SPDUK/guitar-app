@@ -28,9 +28,21 @@ $rhap_font-family: inherit !default;
   }
 }
 
+
+.ant-menu-inline .ant-menu-item {
+margin-top: 0
+}
+
+
+body, html {
+  overflow-x: hidden;
+}
+
 /* Remove outline for non-keyboard :focus */
 *:focus:not(.focus-visible) {
   outline: none;
 }
+
+
 
 /* stylelint-enable */

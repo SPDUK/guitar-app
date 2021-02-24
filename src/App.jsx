@@ -26,7 +26,10 @@ function App() {
         <SiderMenu />
         <Layout className="site-layout" theme="dark">
           <Content style={{
-            padding: 20, background: '#181818', height: 'calc(100vh - 162px)', overflowY: 'auto',
+            padding: 20,
+            background: '#181818',
+            height: 'calc(100vh - 162px)',
+            overflowY: 'auto',
           }}
           >
             <Switch>
