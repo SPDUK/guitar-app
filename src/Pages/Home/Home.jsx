@@ -43,8 +43,13 @@ export default function Home() {
               <a href="https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-solo">Audio interface: Focusrite Solo</a>
             </div>
             <div>
-              <a href="https://www.stltones.com/products/stl-ignite-emissary-plug-in-bundle">Amp Sim: STL Ignite</a>
-              <a href="https://en-uk.sennheiser.com/hd-560-s-audiophile-headphone-high-end-over-ear">Headphones: Sennheiser HD 560S</a>
+              <a href="npx browserslist@latest --update-db
+"
+              >
+                Amp Sim: Bias FX
+
+              </a>
+              <a href="https://orangeamps.com/products/guitar-amp-combos/crush-series/crush20rt/">Amp: Orange Crush 20RT</a>
             </div>
           </div>
 
